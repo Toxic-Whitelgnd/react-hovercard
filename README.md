@@ -93,3 +93,8 @@ export default App;
 
 - [@TarunSK](https://github.com/Toxic-Whitelgnd)
 
+
+## Optimizations
+
+Those who are interested in contributing, they can create a new branch and push changes to the main branch.
+
