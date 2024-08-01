@@ -1,6 +1,5 @@
 import * as React from "react";
 import { useState } from 'react';
-import img1 from "../images/reactskills.png";
 import  Tilt from "react-parallax-tilt";
 
 interface HovCardProps {
@@ -100,7 +99,7 @@ const HovCard: React.FC<HovCardProps> = ({
                         onMouseLeave={handleMouseLeave}
                     >
                         <Tilt>
-                            <img src={cardImgContent ? cardImgContent : img1} alt="imgpls"
+                            <img src={cardImgContent ? cardImgContent : "https://png.pngtree.com/png-vector/20201212/ourmid/pngtree-hello-world-quote-lettering-typography-png-image_2553040.jpg"} alt="imgpls"
                                 width={cardImgWidth ? cardImgWidth : '300px'}
                                 height={cardImgHeight ? cardImgHeight : '200px'} />
                         </Tilt>
@@ -125,4 +124,4 @@ const HovCard: React.FC<HovCardProps> = ({
     );
 };
 
-export default HovCard;
+export  {HovCard};

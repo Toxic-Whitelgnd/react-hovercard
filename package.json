@@ -1,15 +1,23 @@
 {
-  "name": "react-hovercard",
-  "version": "0.0.1",
+  "name": "react-image-hovercard",
+  "version": "0.0.3",
   "description": "A card with a hover effect on the image element.",
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "npx rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "homepage": "https://toxic-whitelgnd.github.io/Portfolio-Tarun/",
+  "repository": {
+    "url": "https://github.com/Toxic-Whitelgnd/react-hovercard"
+  },
+  "keywords": ["react-hovercard", "react-card","cards"],
+  "author": "TarunSK",
   "license": "MIT",
+  "dependencies": {
+  "react-parallax-tilt": "^1.7.234"
+  },
   "devDependencies": {
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-typescript": "^11.1.6",

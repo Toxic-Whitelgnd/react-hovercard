@@ -6,8 +6,8 @@ export default defineConfig({
     output: {
         dir: "dist",
         format: "es",
-        name:"react-hovercard",
+        name:"react-image-hovercard",
     },
-    external: ["react","react-dom"],
+    external: ["react","react-dom","react-parallax-tilt"],
     plugins:[typescript({tsconfig:"tsconfig.json"})]
 })
