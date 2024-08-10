@@ -12,7 +12,7 @@
   "repository": {
     "url": "https://github.com/Toxic-Whitelgnd/react-hovercard"
   },
-  "keywords": ["react-hovercard", "react-card","cards"],
+  "keywords": ["react-hovercard", "react-card","cards","tilt","react-image-tilt","react-hover-effect"],
   "author": "TarunSK",
   "license": "MIT",
   "dependencies": {
