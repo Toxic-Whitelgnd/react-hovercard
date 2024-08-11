@@ -29,6 +29,11 @@ export interface HovCard2BtnProps {
     onCustomClick1?: () => void;
     onCustomClick2?: () => void;
     cardSubtitle?: string;
-    cardSubtitleEnable?: string;
-    isButton2Enabled?: boolean;
+    cardSubtitleEnable?: boolean;
+    cardButton2Enabled?: boolean;
+    cardBackgroundColor?: string;
+    cardBackgroundBodyColor?: string;
+    cardDescpriptionFontSize?: string;
+    cardSubtitleFontSize?: string;
+    cardBoxShadow?: string;
 }
