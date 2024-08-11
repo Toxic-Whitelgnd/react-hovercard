@@ -76,6 +76,8 @@ const App = () => {
         cardDescpriptionFontSize="14px"
         cardSubtitleFontSize="18px"
         cardBoxShadow="0px 10px 15px rgba(0,0,0,0.3)"
+        cardBtnHeight1="28px"
+        cardBtnWidth1="100px"
       />
     </div>
   );

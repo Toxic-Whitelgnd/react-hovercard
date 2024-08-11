@@ -36,4 +36,8 @@ export interface HovCard2BtnProps {
     cardDescpriptionFontSize?: string;
     cardSubtitleFontSize?: string;
     cardBoxShadow?: string;
+    cardBtnHeight1?: string;
+    cardBtnHeight2?: string;
+    cardBtnWidth1?: string;
+    cardBtnWidth2?: string;
 }

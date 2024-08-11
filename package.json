@@ -1,6 +1,6 @@
 {
   "name": "react-image-hovercard",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A card with a hover effect on the image element.",
   "type": "module",
   "main": "dist/index.js",
