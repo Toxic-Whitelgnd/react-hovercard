@@ -8,7 +8,8 @@ export const HovCardStyle = (props: any): CSSProperties => ({
     borderColor: props.cardBorderColor || 'black',
     borderStyle: props.cardBorderStyle || 'solid',
     borderRadius: props.cardBorderRadius || '5px',
-    boxShadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
+    boxShadow: props.cardBoxShadow || 'rgb(38, 57, 77) 0px 20px 30px -10px',
+    backgroundColor: props.cardBackgroundColor || '#00bfff',
 });
 
 export const HovcardStyleonHover = (isHover: boolean, props: any): CSSProperties => ({
