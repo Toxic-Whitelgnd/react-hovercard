@@ -36,4 +36,36 @@ export const BtnStyle2 = (props: any): CSSProperties => ({
     borderRadius: props.cardBtnBorderRadius2 || '10px',
     textDecoration: 'none',
     textTransform: 'capitalize' as CSSProperties['textTransform'],
+    display: props.cardButton2Enabled ? 'block' : 'none',
+});
+
+export const containerStyle = (props:any): React.CSSProperties =>( {
+    backgroundColor: props.cardBackgroundBodyColor || '#00bfff',
+});
+
+export const headerStyle = (props:any): React.CSSProperties =>( {
+    fontSize: props.cardTitleFontSize || '32px',
+});
+
+export const subtitleStyle = (props:any): React.CSSProperties =>( {
+    fontSize: props.cardSubtitleFontSize || '20px',
+    lineHeight: '0px',
+    textAlign: 'left',
+    marginLeft: '12px',
+    display: props.cardSubtitleEnable ? 'block' : 'none',
+});
+
+export const bodyStyle = (props:any): React.CSSProperties =>( {
+    margin: '3px',
+});
+
+export const descriptionStyle = (props:any): React.CSSProperties =>( {
+    fontFamily: props.cardDescpriptionFontFamily || 'Roboto',
+    fontSize: props.cardDescpriptionFontSize || '16px',
+});
+
+export const buttonContainerStyle = (props:any): React.CSSProperties =>( {
+    marginBottom: '0px',
+    display: 'flex',
+    justifyContent: 'space-evenly',
 });
