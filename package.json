@@ -6,6 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
     "build": "npx rollup -c"
   },
   "homepage": "https://toxic-whitelgnd.github.io/Portfolio-Tarun/",
