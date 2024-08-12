@@ -15,7 +15,7 @@
     "url": "https://github.com/Toxic-Whitelgnd/react-hovercard"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@Toxic-Whitelgnd:registry": "https://npm.pkg.github.com"
   },
   "keywords": ["react-hovercard", "react-card","cards","tilt","react-image-tilt","react-hover-effect"],
   "author": "TarunSK",
