@@ -1,5 +1,5 @@
 {
-  "name": "@Toxic-Whitelgnd/react-image-hovercard",
+  "name": "react-image-hovercard",
   "version": "0.1.2",
   "description": "A card with a hover effect on the image element.",
   "type": "module",
@@ -15,7 +15,7 @@
     "url": "https://github.com/Toxic-Whitelgnd/react-hovercard"
   },
   "publishConfig": {
-    "@Toxic-Whitelgnd:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "keywords": ["react-hovercard", "react-card","cards","tilt","react-image-tilt","react-hover-effect"],
   "author": "TarunSK",
