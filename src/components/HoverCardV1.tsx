@@ -7,6 +7,7 @@ import { HovcardStyleonHover,HovCardStyle,BtnStyle } from "../styles/HoverCardV1
 /**
  * In V1, it is normal card,
  * the button is added with links
+ * Mostly depricated
  */
 
 const HovCard: React.FC<HovCardProps> = ({
