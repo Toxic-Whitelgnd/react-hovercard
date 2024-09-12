@@ -1,4 +1,4 @@
-export interface HovCardV2Props {
+export interface HovCardH2Props {
     cardWidth?: string;
     cardHeight?: string;
     cardPadding?: string;
