@@ -32,7 +32,7 @@ const HovCardV2: React.FC<HovCardV2Props> = (props) => {
 
     const handleButtonClick1 = useCustomButtonClick(props.onCustomClick1 || (() => {}));
     const handleButtonClick2 = useCustomButtonClick(props.onCustomClick2 || (() => {}));
-    props.isHoverEnabled = props.isHoverEnabled ? true : false;
+    const isHoverEnabled = props.isHoverEnabled ?? true;
 
     return (
         <div className='hov-card-container'>
@@ -42,7 +42,7 @@ const HovCardV2: React.FC<HovCardV2Props> = (props) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        {props.isHoverEnabled ? (
+                        {isHoverEnabled ? (
                         <Tilt>
                             <img
                             src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"}
