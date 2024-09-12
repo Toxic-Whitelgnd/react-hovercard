@@ -28,6 +28,10 @@ Install my-project with npm
 ```bash
   npm i react-image-hovercard
 ```
+
+## Output
+
+https://github.com/user-attachments/assets/3fe1688b-0c14-48df-8df7-93e26242e4cb
     
 ## Usage/Examples
 
@@ -78,6 +82,50 @@ const App = () => {
         cardBoxShadow="0px 10px 15px rgba(0,0,0,0.3)"
         cardBtnHeight1="28px"
         cardBtnWidth1="100px"
+        isHoverEnabled="true"
+      />
+
+      <HovCardH2
+        cardWidth="400px"
+        cardHeight="auto"
+        cardPadding="10px"
+        cardBorderWidth="3px"
+        cardBorderColor="#333"
+        cardBorderStyle="solid"
+        cardBorderRadius="8px"
+        cardEndScale="1.2"
+        cardStartScale="1.0"
+        cardImgContent="https://i.ibb.co/XbMzrd9/monster.png"
+        cardImgWidth="250px"
+        cardImgHeight="200px"
+        cardTitle="Monster Card"
+        cardTitleFontSize="28px"
+        cardDescpriptionFontFamily="Arial"
+        cardDescpription="This is a customizable hover card with two buttons."
+        cardRandomText="Extra text here."
+        cardBtnName1="First Button"
+        cardBtnName2="Second Button"
+        cardBtnColor1="white"
+        cardBtnColor2="white"
+        cardBtnBackgroundColor1="green"
+        cardBtnBackgroundColor2="blue"
+        cardBtnSize1="16px"
+        cardBtnSize2="16px"
+        cardBtnBorderRadius1="5px"
+        cardBtnBorderRadius2="5px"
+        onCustomClick1={() => alert('First button clicked!')}
+        onCustomClick2={() => alert('Second button clicked!')}
+        cardSubtitle="Optional Subtitle"
+        cardSubtitleEnable={true}
+        cardButton2Enabled={true}
+        cardBackgroundColor="#f4f4f4"
+        cardBackgroundBodyColor="#ffffff"
+        cardDescpriptionFontSize="14px"
+        cardSubtitleFontSize="18px"
+        cardBoxShadow="0px 10px 15px rgba(0,0,0,0.3)"
+        cardBtnHeight1="28px"
+        cardBtnWidth1="100px"
+        isHoverEnabled="false"
       />
     </div>
   );
