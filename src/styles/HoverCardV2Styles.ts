@@ -5,10 +5,11 @@ export const HovCardStyle = (props: any): CSSProperties => ({
     height: props.cardHeight || 'auto',
     padding: props.cardPadding || '3px',
     borderWidth: props.cardBorderWidth || '4px',
-    borderColor: props.cardBorderColor || 'black',
+    borderColor: props.cardBorderColor || '#00bfff',
     borderStyle: props.cardBorderStyle || 'solid',
     borderRadius: props.cardBorderRadius || '5px',
-    boxShadow: 'rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px',
+    boxShadow: props.cardBoxShadow || 'rgb(38, 57, 77) 0px 20px 30px -10px',
+    backgroundColor: props.cardBackgroundColor || '#00bfff',
 });
 
 export const HovcardStyleonHover = (isHover: boolean, props: any): CSSProperties => ({
@@ -26,6 +27,11 @@ export const BtnStyle1 = (props: any): CSSProperties => ({
     borderRadius: props.cardBtnBorderRadius1 || '10px',
     textDecoration: 'none',
     textTransform: 'capitalize' as CSSProperties['textTransform'],
+    height:props.cardBtnHeight1 || '28px',
+    width:props.cardBtnWidth1 || '80px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
 });
 
 export const BtnStyle2 = (props: any): CSSProperties => ({
@@ -36,7 +42,11 @@ export const BtnStyle2 = (props: any): CSSProperties => ({
     borderRadius: props.cardBtnBorderRadius2 || '10px',
     textDecoration: 'none',
     textTransform: 'capitalize' as CSSProperties['textTransform'],
-    display: props.cardButton2Enabled ? 'block' : 'none',
+    display: props.cardButton2Enabled ? 'flex' : 'none',
+    height: props.cardBtnHeight2 || '28px',
+    width: props.cardBtnWidth2 || '80px',
+    justifyContent: 'center',
+    alignItems: 'center',
 });
 
 export const containerStyle = (props:any): React.CSSProperties =>( {

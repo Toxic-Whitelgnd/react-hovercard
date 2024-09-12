@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tilt from "react-parallax-tilt";
-import { HovCard2BtnProps } from '../models/HoverCardV2props';
+import { HovCardV2Props } from '../models/HoverCardV2props';
 import { HovCardStyle, HovcardStyleonHover, BtnStyle1, BtnStyle2 , containerStyle, descriptionStyle , bodyStyle , buttonContainerStyle, subtitleStyle, headerStyle} from '../styles/HoverCardV2Styles';
 import { useCustomButtonClick } from '../hooks/CustomHooks';
 
@@ -24,7 +24,7 @@ import { useCustomButtonClick } from '../hooks/CustomHooks';
  
  */
 
-const HovCardV2: React.FC<HovCard2BtnProps> = (props) => {
+const HovCardV2: React.FC<HovCardV2Props> = (props) => {
     const [isHover, setIsHover] = useState(false);
 
     const handleMouseEnter = () => setIsHover(true);
@@ -32,6 +32,7 @@ const HovCardV2: React.FC<HovCard2BtnProps> = (props) => {
 
     const handleButtonClick1 = useCustomButtonClick(props.onCustomClick1 || (() => {}));
     const handleButtonClick2 = useCustomButtonClick(props.onCustomClick2 || (() => {}));
+    props.isHoverEnabled = props.isHoverEnabled ? true : false;
 
     return (
         <div className='hov-card-container'>
@@ -41,14 +42,24 @@ const HovCardV2: React.FC<HovCard2BtnProps> = (props) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
+                        {props.isHoverEnabled ? (
                         <Tilt>
-                            <img 
-                                src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"} 
-                                alt="imgpls"
-                                width={props.cardImgWidth || '250px'}
-                                height={props.cardImgHeight || '200px'} 
-                            />
+                            <img
+                            src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"}
+                            alt="imgpls"
+                            width={props.cardImgWidth || '250px'}
+                            height={props.cardImgHeight || '200px'}
+                        />
                         </Tilt>
+                        ) : (
+                            <img
+                            src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"}
+                            alt="imgpls"
+                            width={props.cardImgWidth || '250px'}
+                            height={props.cardImgHeight || '200px'}
+                        />
+                        )}
+                       
                     </div>
                     <div style={containerStyle(props)}>
                         <div className="hov-card-header">
