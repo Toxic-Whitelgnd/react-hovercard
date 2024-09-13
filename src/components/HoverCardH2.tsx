@@ -33,7 +33,7 @@ const HovCardH2: React.FC<HovCardH2Props> = (props) => {
     const handleButtonClick1 = useCustomButtonClick(props.onCustomClick1 || (() => {}));
     const handleButtonClick2 = useCustomButtonClick(props.onCustomClick2 || (() => {}));
 
-    const isHoverEnabled = props.isHoverEnabled ?? true;
+    const isHoverEnabled =  Boolean(props.isHoverEnabled ?? true);
     
     return (
         <div className='hov-card-container'>
@@ -41,14 +41,14 @@ const HovCardH2: React.FC<HovCardH2Props> = (props) => {
                 <div
                     className='hov-card-image'
                     style={getHovCardImageStyles(props, isHover)}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={isHoverEnabled ? handleMouseEnter : handleMouseLeave}
+                    onMouseLeave={isHoverEnabled ? handleMouseLeave : handleMouseLeave}
                 >
                     {isHoverEnabled ? (
                         <Tilt>
                             <img
                             src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"}
-                            alt="imgpls"
+                            alt="Provide a Image"
                             width={props.cardImgWidth || '250px'}
                             height={props.cardImgHeight || '200px'}
                         />
@@ -56,7 +56,7 @@ const HovCardH2: React.FC<HovCardH2Props> = (props) => {
                     ) : (
                         <img
                         src={props.cardImgContent || "https://i.ibb.co/XbMzrd9/monster.png"}
-                        alt="imgpls"
+                        alt="Provide a Image"
                         width={props.cardImgWidth || '250px'}
                         height={props.cardImgHeight || '200px'}
                     />
