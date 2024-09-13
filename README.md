@@ -31,7 +31,7 @@ Install my-project with npm
 
 ## Output
 
-<img src="https://github.com/user-attachments/assets/3fe1688b-0c14-48df-8df7-93e26242e4cb" />
+https://github.com/user-attachments/assets/3fe1688b-0c14-48df-8df7-93e26242e4cb
 
     
 ## Usage/Examples
