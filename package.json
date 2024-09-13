@@ -1,6 +1,6 @@
 {
   "name": "react-image-hovercard",
-  "version": "0.1.9",
+  "version": "0.2.1",
   "description": "A card with a hover effect on the image element.",
   "type": "module",
   "main": "dist/index.js",
@@ -21,7 +21,8 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "keywords": ["react-hovercard", "react-card","cards","tilt","react-image-tilt","react-hover-effect",
-  "react-vertical-card","react-horizontal-card","react-cards"],
+  "react-vertical-card","react-horizontal-card","react-cards","react-image-effect","react","react-vertical-card",
+  "react-hover-effect","react-horizontal-card","react-hover-effect","react-horizontal-vertical-card"],
   "author": "TarunSK",
   "license": "MIT",
   "dependencies": {

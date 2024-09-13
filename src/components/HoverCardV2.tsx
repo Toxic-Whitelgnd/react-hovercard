@@ -32,15 +32,15 @@ const HovCardV2: React.FC<HovCardV2Props> = (props) => {
 
     const handleButtonClick1 = useCustomButtonClick(props.onCustomClick1 || (() => {}));
     const handleButtonClick2 = useCustomButtonClick(props.onCustomClick2 || (() => {}));
-    const isHoverEnabled = props.isHoverEnabled ?? true;
+    const isHoverEnabled =  Boolean(props.isHoverEnabled ?? true);
 
     return (
         <div className='hov-card-container'>
             <div>
                 <div className='hov-card' style={HovCardStyle(props)}>
                     <div className='hov-card-style' style={HovcardStyleonHover(isHover, props)}
-                        onMouseEnter={handleMouseEnter}
-                        onMouseLeave={handleMouseLeave}
+                        onMouseEnter={isHoverEnabled ? handleMouseEnter : handleMouseLeave}
+                        onMouseLeave={isHoverEnabled ? handleMouseLeave : handleMouseLeave}
                     >
                         {isHoverEnabled ? (
                         <Tilt>
