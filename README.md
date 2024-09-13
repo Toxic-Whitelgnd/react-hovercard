@@ -31,7 +31,7 @@ Install my-project with npm
 
 ## Output
 
-https://github.com/user-attachments/assets/3fe1688b-0c14-48df-8df7-93e26242e4cb
+![366832943-3fe1688b-0c14-48df-8df7-93e26242e4cb-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/f2435dc8-c69d-4515-be97-62866aef7d5f)
 
     
 ## Usage/Examples
